@@ -19,3 +19,4 @@ Created Using:
 Future Improvements:
 
 - Comment code
+- Resolve mobile background image display issue
