@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Random Quote Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+<div id="container">
+  <div id="mainTitle">
+    <h1 class="titleShadow">Wikipedia Viewer</h1>
+    <p class="shadow">Use the menu items below to search for a specific subject, or view a random article</p>
+  </div>
+  <div id="results"></div>
+  <div id="searchContainer">
+    <div id="searchForm">
+      <div id="searchContainerTitle">
+        <i id="searchCancel" class="smallIconShadow fa fa-times-circle-o"></i>
+        <p id="searchWikiText" class="shadow">Search Wikipedia</p>
+      </div>
+      <form>
+        <input id="searchBox" type="text"></input>
+        <button id="searchButton" class="smallIconShadow" type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+  <div id="footer">
+    <div id="randomLinkContainer">
+      <a target="_blank" href="http://en.wikipedia.org/wiki/Special:Random"><button id="footerRandomButton"><p class="largeShadow"><i class="icon fa fa-newspaper-o"></i></p></button></a>
+      <p class="shadow linkText">Random</p>
+    </div>
+    <div id="searchLinkContainer">
+      <button id="footerSearchButton"><p class="largeShadow"><i class="icon fa fa-search"></i></p></button>
+      <p class="shadow linkText">Search</p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>    
+    
+<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

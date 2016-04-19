@@ -1,0 +1,243 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#mainTitle {
+  text-align:center;
+  display: none;
+}
+
+#container {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url('img/wiki_background.jpg') center center fixed no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#results {
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 100px;
+  text-align:center;
+  background-color: white;
+  background: url('img/wiki_background.jpg') center center fixed no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  text-align: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#footerRandomButton {
+  position: relative;
+  color: white;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+#footerSearchButton {
+  position: relative;
+  color: white;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+#randomLinkContainer {
+  margin-right: 25%;
+  display:block;
+  float: right;
+  clear: right;
+}
+
+#searchLinkContainer {
+  margin-left: 25%;
+  display:block;
+  float: left;
+  clear: left;
+}
+
+.linkText {
+  margin-top: -2px;
+}
+
+#searchContainer {
+  display: none;
+  text-align: center;
+  width: 300px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  margin-top: -75px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 30px;
+  position: relative;
+  box-shadow: 0px 2px 10px black, inset 0px 10px 10px rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#searchForm {
+  position: relative;
+  top: 0;
+  height 100px;
+  width: 300px;
+  margin-left: 5px;
+  -webkit-transition: all 1s;
+  transition: all 1s;  
+}
+
+#searchWikiText {
+  display:block;
+  margin-left: 7.5%;
+}
+
+#searchCancel {
+  display:block;
+  float: right;
+  margin-right: 7.5%;
+  font-size: 1.2em;
+}
+
+#searchBox {
+  display: block;
+  height: 30px;
+  width: 280px;
+  text-align: center;
+  outline: none;
+  border-radius: 15px;
+  font-size: 1.2em;
+  box-shadow: inset 1px 0px 5px black, inset -1px 0px 5px black, inset 0px 2px 10px black;
+}
+
+#searchButton {
+  font-size: 3em;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.shadow {
+  color: white;
+  text-shadow: 1px 0px 2px black, -1px 0px 2px black, 0px 1px 2px black, 0px -1px 2px black;
+}
+
+.largeShadow {
+  color: white;
+  text-shadow: 2px 0px 10px black, -2px 0px 10px black, 0px 2px 10px black, 0px -2px 10px black;
+}
+
+.titleShadow {
+  color: white;
+  text-shadow: 2px 0px 10px black, -2px 0px 10px black, 0px 2px 10px black, 0px -2px 10px black;
+}
+
+.largeShadow:hover {
+  color: white;
+  text-shadow: 2px 0px 15px white, -2px 0px 15px white, 0px 2px 15px white, 0px -2px 15px white;
+}
+
+.smallIconShadow {
+  color: white;
+  text-shadow: 1px 0px 2px black, -1px 0px 2px black, 0px 1px 2px black, 0px -1px 2px black;
+}
+
+.smallIconShadow:hover {
+  color: black;
+  text-shadow: 1px 0px 2px white, -1px 0px 2px white, 0px 1px 2px white, 0px -1px 2px white;
+}
+
+.icon {
+  font-size: 3em;
+}
+
+.icon:hover {
+  color: black;
+}
+
+#item1 {
+  margin-top: 5%;
+}
+
+.resultItem {
+  border: solid black 1px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 5px;
+}
+
+.resultItem:hover {
+  border: solid black 1px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+  background-color: white;
+  box-shadow: inset 0px 0px 10px gray, 0px 0px 10px black;
+}
+
+.resultLink {
+  text-decoration:none;
+  color: black;
+}
+
+.showFooter {
+  animation-name: footerShow;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.hideFooter {
+  animation-name: footerHide;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes footerShow {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100px;
+  }
+}
+
+@keyframes footerHide {
+  0% {
+    height: 100px;
+  }
+  100% {
+    height: 0;
+  }
+}
