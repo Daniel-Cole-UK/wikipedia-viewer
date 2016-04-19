@@ -1,6 +1,6 @@
 Free Code Camp Front End Development Projects - Build a Wikipedia Viewer
 
-Task: Create a webpage which can allows the user to search for and view Wikiepdia articles.
+Task: Create a web page which allows the user to search for and view Wikipedia articles.
 
 User Stories:
 
